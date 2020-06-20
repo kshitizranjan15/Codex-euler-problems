@@ -2,26 +2,15 @@
 public class problem6 
 {
 
-	public static void main(String[] args)
-	{
-		int a,n,i,s1,s2,s3,r;
-		s1=0;
-		s2=0;
-		s3=0;
-		n=100;
-		for(i=1;i<=n;i++)
-		{
-			a=i*i;
-			s1=s1+a;
-		}
-		for(i=1;i<=n;i++)
-		{
-			s2=s2+i;
-			s3=s2*s2;
-		}
-         r=s3-s1;
-         System.out.println("The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is "+r);
+	public static void main(String[] args) {
+		int x=100;
+		double s1=Math.pow((x*(x+1)/2),2);
+	    double s2=x*(x+1)*(2*x+1)/6;
+		System.out.println("(1+2+3+...+k)^2="+(int)s1);
+		System.out.println("1^2+2^2+3^2+...+k^2="+(int)s2);
+		System.out.println("Reqired difference="+(int)(s1-s2));
 	}
 
+
 }
-//output:-The difference between the sum of the squares of the first one hundred natural numbers and the square of the sum is 25164150
+//output:-Reqired difference=25164150
