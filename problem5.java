@@ -1,8 +1,5 @@
 //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
-public class problem5 
-{
-	
-	public class program5
+public class program5
  {
    public static long evenlydivide(long a,long b) {
     long temp,m=0,n;
@@ -25,5 +22,5 @@ public class problem5
  }
 //output:-232792560
 
-
-
+	
+	
